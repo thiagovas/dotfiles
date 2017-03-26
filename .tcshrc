@@ -1,0 +1,6 @@
+set os="`uname -a | grep FreeBSD`"
+if ("$os" == "") then
+  alias ls 'ls --color=auto'
+else
+  alias ls 'ls -HG'
+endif
