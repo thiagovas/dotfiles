@@ -29,10 +29,33 @@ set t_Co=256
 "
 set scrolloff=1
 
+" Disabling mousewheel...
+map <MiddleMouse> <Nop>
+imap <MiddleMouse> <Nop>
+map <2-MiddleMouse> <Nop>
+imap <2-MiddleMouse> <Nop>
+map <3-MiddleMouse> <Nop>
+imap <3-MiddleMouse> <Nop>
+map <4-MiddleMouse> <Nop>
+imap <4-MiddleMouse> <Nop>
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ==> Plugin Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin List:
+"
+" - Pathogen                  ( https://github.com/tpope/vim-pathogen )
+" - Vim Windows Swap          ( https://github.com/wesQ3/vim-windowswap )
+" - NERDTree                  ( https://github.com/scrooloose/nerdtree )
+" - Vim Airline               ( https://github.com/vim-airline/vim-airline )
+" - Syntastic                 ( https://github.com/vim-syntastic/syntastic )
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 
 
 """""""""""""""""""""""""""""""""""""""
