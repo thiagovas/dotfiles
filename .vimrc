@@ -1,8 +1,9 @@
-:set softtabstop=2 tabstop=2 shiftwidth=2 expandtab cindent
+set softtabstop=2 tabstop=2 shiftwidth=2 expandtab cindent
 set number mouse=a ruler
 
 set splitbelow
 set splitright
+set shiftround
 syntax on
 
 " Unset clipboard so I can yank lines to other programs.
@@ -16,6 +17,16 @@ set showmatch
 
 " Incremental search.
 set incsearch
+
+" Ignore Case when searching.
+set ignorecase
+
+" Highlight search terms.
+set hlsearch
+
+" Dont Beep.
+set visualbell
+set noerrorbells
 
 " Don't highlight the current line.
 set nocursorline
