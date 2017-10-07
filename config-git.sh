@@ -3,4 +3,6 @@
 
 # https://help.github.com/articles/caching-your-github-password-in-git/
 git config --global credential.helper cache
-git config --global credential.helper 'cache --timeout=60'
+
+# Setting timer to 5 minutes...
+git config --global credential.helper 'cache --timeout=300'
