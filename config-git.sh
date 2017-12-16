@@ -20,3 +20,6 @@ git config --global credential.helper cache
 
 # Setting timer to 5 minutes...
 git config --global credential.helper 'cache --timeout=300'
+
+
+git config --global push.default simple
