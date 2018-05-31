@@ -63,6 +63,7 @@ imap <4-MiddleMouse> <Nop>
 " - NERDTree                  ( https://github.com/scrooloose/nerdtree )
 " - Vim Airline               ( https://github.com/vim-airline/vim-airline )
 " - Syntastic                 ( https://github.com/vim-syntastic/syntastic )
+" - YouCompleteMe             ( https://github.com/Valloric/YouCompleteMe )
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -95,21 +96,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Open NERDTree automatically when vim starts up on opening a directory
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-
-
-
-"""""""""""""""""""""""""""""""""""""""
-" ==> ClangFormat
-"""""""""""""""""""""""""""""""""""""""
-let g:clang_format#detect_style_file = 1
-
-" map to <Leader>cf in C++ code
-autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
-autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
-" if you install vim-operator-user
-autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
-" Toggle auto formatting:
-nmap <Leader>C :ClangFormatAutoToggle<CR>
 
 
 
