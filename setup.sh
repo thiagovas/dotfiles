@@ -28,3 +28,10 @@ git submodule update --init --recursive
 sudo apt install libclang-5.0-dev
 ./install.py --clang-completer
 cd -
+
+cat >~/.ycm_extra_conf.py <<EOL
+def FlagsForFile( filename, **kwargs ):
+  return {
+    'flags': [ '-x', 'c++', '-Wall', '-Wextra', '-Werror' ],
+  }
+EOL
