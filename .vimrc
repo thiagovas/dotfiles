@@ -64,6 +64,7 @@ imap <4-MiddleMouse> <Nop>
 " - Vim Airline               ( https://github.com/vim-airline/vim-airline )
 " - Syntastic                 ( https://github.com/vim-syntastic/syntastic )
 " - YouCompleteMe             ( https://github.com/Valloric/YouCompleteMe )
+" - DoxygenToolkit            ( https://github.com/vim-scripts/DoxygenToolkit.vim.git )
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -160,3 +161,19 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [], 'passive
 nmap <space>m :SyntasticCheck<CR>
 
 :autocmd BufWritePost * :redraw! | SyntasticReset
+
+
+
+"""""""""""""""""""""""""""""""""""""""
+" ==> DoxygenToolkit
+"""""""""""""""""""""""""""""""""""""""
+let g:DoxygenToolkit_briefTag_pre="@Brief  "
+let g:DoxygenToolkit_paramTag_pre="@Param "
+let g:DoxygenToolkit_returnTag="@Returns   "
+let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
+let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
+let g:DoxygenToolkit_authorName="Thiago Silva"
+let g:DoxygenToolkit_commentType = "C++"
+
+" Run :Dox
+nmap <C-x> :Dox<CR>

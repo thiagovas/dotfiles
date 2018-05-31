@@ -19,6 +19,7 @@ git clone https://github.com/wesQ3/vim-windowswap ~/.vim/bundle/vim-windowswap
 git clone https://github.com/scrooloose/nerdtree ~/.vim/bundle/nerdtree
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 git clone https://github.com/vim-syntastic/syntastic ~/.vim/bundle/syntastic
+git clone https://github.com/vim-scripts/DoxygenToolkit.vim.git ~/.vim/bundle/DoxygenToolkit
 
 # Installing YouCompleteMe
 git clone https://github.com/Valloric/YouCompleteMe  ~/.vim/bundle/YouCompleteMe
