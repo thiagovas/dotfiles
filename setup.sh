@@ -32,6 +32,6 @@ cd -
 cat >~/.ycm_extra_conf.py <<EOL
 def FlagsForFile( filename, **kwargs ):
   return {
-    'flags': [ '-x', 'c++', '-Wall', '-Wextra', '-Werror' ],
+    'flags': [ '-x', 'c++', '-Wall', '-Wextra' ],
   }
 EOL
