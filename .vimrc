@@ -50,6 +50,11 @@ imap <3-MiddleMouse> <Nop>
 map <4-MiddleMouse> <Nop>
 imap <4-MiddleMouse> <Nop>
 
+set foldmethod=syntax
+set foldlevel=1
+set foldclose=all
+set foldnestmax=3
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  ==> Plugin Settings
