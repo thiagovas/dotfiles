@@ -182,3 +182,11 @@ let g:DoxygenToolkit_commentType = "C++"
 
 " Run :Dox
 nmap <C-x> :Dox<CR>
+
+
+
+
+"""""""""""""""""""""""""""""""""""""""
+" ==> YouCompleteMe
+"""""""""""""""""""""""""""""""""""""""
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
