@@ -1,5 +1,15 @@
+let g:loaded_youcompleteme = 1
+
 set softtabstop=2 tabstop=2 shiftwidth=2 expandtab cindent
 set number mouse=a ruler
+
+" for html/js files, 4 spaces
+autocmd Filetype html setlocal ts=4 sw=4 si
+autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 si
+
+" Do not expand tabs on make files.
+autocmd FileType make set noexpandtab
+
 
 set splitbelow
 set splitright
