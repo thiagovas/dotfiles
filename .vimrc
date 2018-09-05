@@ -6,6 +6,7 @@ set number mouse=a ruler
 " for html/js files, 4 spaces
 autocmd Filetype html setlocal ts=4 sw=4 si
 autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 si
+autocmd Filetype python setlocal ts=4 sw=4 sts=0 expandtab si
 
 " Do not expand tabs on make files.
 autocmd FileType make set noexpandtab
