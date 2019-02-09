@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install autotools-dev automake build-essential cmake
+sudo apt-get install autotools-dev automake build-essential cmake curl
 
 
 # Installing ncurses
