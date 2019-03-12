@@ -1,5 +1,16 @@
+let g:loaded_youcompleteme = 1
+
 set softtabstop=2 tabstop=2 shiftwidth=2 expandtab cindent
 set number mouse=a ruler
+
+" for html/js files, 4 spaces
+autocmd Filetype html setlocal ts=4 sw=4 si
+autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 si
+autocmd Filetype python setlocal ts=4 sw=4 sts=0 expandtab si
+
+" Do not expand tabs on make files.
+autocmd FileType make set noexpandtab
+
 
 set splitbelow
 set splitright
@@ -190,3 +201,4 @@ nmap <C-x> :Dox<CR>
 " ==> YouCompleteMe
 """""""""""""""""""""""""""""""""""""""
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf=0
