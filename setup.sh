@@ -10,6 +10,9 @@ sudo apt-get install libncurses5 libncurses5-dev
 # Installing tmux
 sudo apt-get install tmux
 
+# Installing tex packages
+sudo apt-get install texlive pandoc texlive-science texlive-lang-portuguese texlive-lang-english
+
 # Installing Pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
